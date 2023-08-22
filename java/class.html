@@ -1,4 +1,5 @@
 
+
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=0.8">
@@ -103,8 +104,8 @@ public int age; // public μεταβλητή</code></pre></div></div>
             <div  class="line-numbers"><pre class="code_editor"><code class="language-java">objectName.methodName(parameters);
 objectName.fieldName;</code></pre></div></div>
 
-            <p>Το this χρησιμοποιείται για να αναφερθεί στις μεταβλητές του τρέχοντος αντικειμένου της κλάσης.</p>
-            <p></p>
+            <p>Το this χρησιμοποιείται για να αναφερθεί στις μεταβλητές του τρέχοντος αντικειμένου της κλάσης.
+            Συγκεκριμένα όταν υπάρχει σύγκρουση ονομάτων μεταξύ των πεδίων της κλάσης και των τοπικών μεταβλητών ή παραμέτρων ενός μεθόδου, το this χρησιμοποιείται για να διαχωρίσει το πεδίο της κλάσης από τις τοπικές μεταβλητές. Έτσι, καθορίζεται ότι αναφερόμαστε στο πεδίο του αντικειμένου, όχι στην τοπική μεταβλητή.</p>
             <div class="bg_preview">
                 <div  class="line-numbers"><pre class="code_editor"><code class="language-java">public Vehicle(String make, String model, int year, double price) {
     // Η εκχώρηση της τιμής της παραμέτρου make στην μεταβλητή make του τρέχοντος αντικειμένου της κλάσης Vehicle.
@@ -117,7 +118,7 @@ objectName.fieldName;</code></pre></div></div>
     
     
 
-            <p><u>Παράδειγμα</u></p>
+            <h2 class="highlight_blue">Παράδειγμα</h2>
             <div class="bg_preview">
                 <div  class="line-numbers"><pre class="code_editor"><code class="language-java">public class Vehicle {
     // Fields (Instance Variables)
