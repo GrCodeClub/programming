@@ -101,7 +101,7 @@ int main() {
 
 int main() {
     const char *numberStr = "1234567890";
-    // Μετατροπή της συμβολοσειράς "1234567890" σε μακρύ ακέραιο 
+    // Μετατροπή της συμβολοσειράς "1234567890" σε long int 
     long number = atol(numberStr);                       
     printf("The number is: %ld\n", number);             
     return 0;
@@ -141,11 +141,70 @@ int main() {
     const char source[] = "World!";              
     // Συνένωση των συμβολοσειρών           
     strcat(destination, source);                       
-    printf("Συνενωμένη συμβολοσειρά: %s\n", destination);                        
+    printf("Ενωμένη συμβολοσειρά: %s\n", destination);                        
     return 0;
 }</code></pre></div></div>
-            
-            </div><!-- Τέλος Background Κειμένου-->
+
+            <p>Συγκρίνει τις συμβολοσειρές string1 and string2. Επιστρέφει 0 όταν είναι ίσες.</p>
+            <div class="bg_preview">
+            <div  class="line-numbers"><pre class="code_editor"><code class="language-c">int strcmp(const char* string1, const char* string2);</code></pre></div></div>
+
+            <p><u>Παράδειγμα</u></p>
+            <div class="bg_preview">
+            <div  class="line-numbers"><pre class="code_editor"><code class="language-cpp">#include &lt;stdio.h&gt;
+#include  &lt;string.h&gt;
+
+int main() {
+    const char *str1 = "apple";
+    const char *str2 = "banana";
+    int result = strcmp(str1, str2);
+
+    if (result < 0) {
+        printf("'%s'είναι μικρότερο απο'%s'\n", str1, str2);
+    } else if (result > 0) {
+        printf("'%s' είναι μεγαλύτερη απο'%s'\n", str1, str2);
+    } else {
+        printf("'%s' είναι ίσο με '%s'\n", str1, str2);
+    }
+    return 0;
+}</code></pre></div></div>
+
+            <p>Αντιγράφει το περιεχόμενο της src στη dest. Επιστρέφει την dest.</p>
+            <div class="bg_preview">
+            <div  class="line-numbers"><pre class="code_editor"><code class="language-c">char* strcpy (char* dest, const char* src);</code></pre></div></div>
+            <p><u>Παράδειγμα</u></p>
+            <div class="bg_preview">
+            <div  class="line-numbers"><pre class="code_editor"><code class="language-cpp">#include &lt;stdio.h&gt;
+#include  &lt;string.h&gt;
+
+int main() {
+    const char *source = "Hello, World!";
+    char destination[50];
+    // Αντιγραφή του περιεχομένου source στo destination
+    strcpy(destination, source); 
+    printf("Source: %s\n", source);
+    printf("Destination: %s\n", destination);
+    return 0;
+}</code></pre></div></div>
+
+            <p>Επιστρέφει το μήκος της συμβολοσειράς.</p>
+            <div class="bg_preview">
+            <div  class="line-numbers"><pre class="code_editor"><code class="language-c">size_t strlen (const char* string);</code></pre></div></div>
+            <p><u>Παράδειγμα</u></p>
+            <div class="bg_preview">
+            <div  class="line-numbers"><pre class="code_editor"><code class="language-cpp">#include &lt;stdio.h&gt;
+#include  &lt;string.h&gt;
+
+int main() {
+    const char *str = "Hello, World!";
+    // Υπολογισμός μήκους της συμβολοσειράς
+    size_t length = strlen(str); 
+    
+    printf("The length of the string is: %zu\n", length);
+    
+    return 0;
+}</code></pre></div></div>
+        </div><!-- Τέλος Background Κειμένου-->
 
             </div> <!--Τέλος Κειμένου-->
 
