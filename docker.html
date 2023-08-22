@@ -64,7 +64,7 @@
 
             <div class="Text"> <!--Αρχή Κειμένου-->
                 <div class="text_bg"> <!-- Αρχή Background Κειμένου-->
-                    <h1 class="title">Docker</h1>
+                    <h1 class="title">Docker </h1>
                     
                     <p>Το Docker είναι μια πλατφόρμα ανοικτού κώδικα που χρησιμοποιείται για την αυτοματοποίηση, την ανάπτυξη και την εκτέλεση εφαρμογών μέσα σε περιβάλλοντα περιορισμένων πόρων, γνωστά ως "containers".</p>
                     <p>Η λογική του Docker, είναι ότι σηκώνουμε ένα container για κάθε service που θέλουμε.</p>
@@ -77,11 +77,11 @@
                     <p><u>Βασικές εντολές διαχείρισης container</u></p>
                     <p>Για να δούμε λοιπόν μία γενική εικόνα των container που έχουμε στο σύστημά μας, δίνουμε την εντολή:</p>
                     <div class="terminal" ><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker ps -a</code></pre>           
-                    <pre><code class="language-bash" >CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS                   PORTS                                            NAMES
-ac376ff4d912        linuxserver/heimdall:latest   "/init"                  2 weeks ago         Up 10 minutes             0.0.0.0:8001->80/tcp, 0.0.0.0:9001->443/tcp      grcode</code></pre></div>                
+                    <pre><code class="language-bash" >CONTAINER ID    IMAGE              COMMAND            CREATED         STATUS          PORTS                NAMES
+8b3a2f0d4e25    nginx:latest       "nginx -g 'daemon   2 hours ago     Up 2 hours      0.0.0.0:80->80/tcp   web_server</code></pre></div>                
 
                     <ul>
-                        <li>CONTAINER ID: Ο αριθμός του κάθε container στο σύστημά μας. Μπορούμε να τον χρησιμοποιήσουμε για να διαγράψουμε (π.χ.) ένα container αν δε θέλουμε να χρησιμοποιήσουμε το όνομά του.</li>
+                        <li>CONTAINER ID: Ο αριθμός του κάθε container στο σύστημά μας. Μπορούμε να τον χρησιμοποιήσουμε για να διαγράψουμε (π.χ. web_server) ένα container αν δε θέλουμε να χρησιμοποιήσουμε το όνομά του.</li>
                         <li>IMAGE: Η υπηρεσία που τρέχει μέσα σε κάθε container.</li>
                         <li>CREATED: Πότε δημιουργήθηκε το συγκεκριμένο container.</li>
                         <li>STATUS: Εδώ μπορούμε να δούμε αν το container λειτουργεί ή αν είναι σταματημένο.</li>
@@ -90,20 +90,20 @@ ac376ff4d912        linuxserver/heimdall:latest   "/init"                  2 wee
                     </ul>
 
 
-                    <p>Για να σταματήσουμε ένα container (π.χ grcode) δίνουμε την εντολή:</p>
-                    <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker stop grcode</code></pre></div>                
+                    <p>Για να σταματήσουμε ένα container (π.χ web_server) δίνουμε την εντολή:</p>
+                    <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker stop web_server</code></pre></div>                
 
                     <p>Αντίστοιχα για να το ξεκινήσουμε και πάλι δίνουμε την εντολή:</p>
-                    <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker start grcode</code></pre></div>
+                    <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker start web_server</code></pre></div>
                     
-                    <p>Για να αφαιρέσουμε ένα container από το σύστημά μας θα πρέπει πρώτα να το σταματήσουμε και μετά να το διαγράψουμε.</p>
-                    <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker rm -f grcode</code></pre></div>
+                    <p>Για να αφαιρέσουμε ένα container (π.χ web_server) από το σύστημά μας θα πρέπει πρώτα να το σταματήσουμε και μετά να το διαγράψουμε.</p>
+                    <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker rm -f web_server</code></pre></div>
 
                     <p>Για να διαγράψουμε μαζικά όλα τα container που έχουμε σταματημένα δίνουμε την εντολή</p>
                     <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker container prune</code></pre></div>
 
-                    <p>Με την ακόλουθη μπορούμε να μάθουμε το port για ένα συγκεκριμένο container (π.χ grcode). </p>
-                    <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker port portainer</code></pre></div>
+                    <p>Με την ακόλουθη μπορούμε να μάθουμε το port για ένα συγκεκριμένο container (π.χ web_server). </p>
+                    <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker port web_server</code></pre></div>
 
 
 
