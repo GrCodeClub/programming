@@ -1,8 +1,9 @@
+
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=0.8">
         <meta property="og:image" content="https://grcodeclub.github.io/file/background/3.png"/>
-        <meta property="og:title" content="Γλώσσα Προγραμματισμού C++ | Εντολές">
+        <meta property="og:title" content="Γλώσσα Προγραμματισμού C | Εντολές">
         <script src="https://grcodeclub.github.io/javascript/jquery.js"></script>
         <script src="https://grcodeclub.github.io/programming/javascript/menu.js"></script>
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/header_and_footer.css">
@@ -13,6 +14,9 @@
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/list.css">
          <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
         <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
+                <link rel="stylesheet" href="https://grcodeclub.github.io/css/code_bg.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/prism.css" />
+        <script src="https://grcodeclub.github.io/javascript/prism.js"></script>
         <title> GrCode Club</title>
     </head>
 
@@ -24,7 +28,7 @@
                         <tr>
                             <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
                             <td><h1 class="header_text"><span class="header_text">  GrCode Club </span></h1></td>
-                            <td><a href="https://github.com/GrCodeClub/grcodeclub.github.io/edit/main/programming/c%2B%2B/command.html" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png"  width="60px"></a></td>
+                            <td><a href="https://github.com/GrCodeClub/programming/edit/main/c%2B%2B/command.html" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png"  width="60px"></a></td>
                         </tr>
                     </table> 
                 </div> <!--Τέλος Επικεφαλίδας-->
@@ -46,21 +50,17 @@
                         </tr>
                     </table> 
                 </div> <!--Τέλος Επικεφαλίδας σε κινητά -->
-                <table>  <!--Αρχή Menu σε κινητά-->
-                    <tr>
-                        <td>
-                            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-                            <label for="openSidebarMenu" class="sidebarIconToggle">
-                                <div class="spinner diagonal part-1"></div>
-                                <div class="spinner horizontal"></div>
-                                <div class="spinner diagonal part-2"></div>
-                            </label>
-                            <div id="sidebarMenu" style="overflow: auto;">
-                                <ul class="sidebarMenuInner"></ul>
-                            </div>
-                        </td>
-                    </tr>
-                </table> <!--Τέλος Menu σε κινητά-->
+                <div>
+                    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                    <label for="openSidebarMenu" class="sidebarIconToggle">
+                        <div class="spinner diagonal part-1"></div>
+                        <div class="spinner horizontal"></div>
+                        <div class="spinner diagonal part-2"></div>
+                    </label>
+                    <div id="sidebarMenu">
+                        <ul class="sidebarMenuInner"></ul>
+                    </div>
+                </div>
             </section> <!--Τέλος εμφάνιση σε κινητά-->
 
             <div class="Text"> <!--Αρχή Κειμένου-->
@@ -69,80 +69,34 @@
 
                     <h1 class="title">Εντολές</h1>
 
-                    <div class="search"><input type="input" class="form__field" placeholder="Αναζήτηση Βιβλιοθήκης" id='searchInput'/></div>
-                    <table id="table" class="style2">
-                        <tr>   
-                            <th>Εντολή</th>
-                            <th>Περιγραφή</th>
-                        </tr>
-                        <tr class="style2">
-                            <td><code>cout << "Κείμενο";</code></td>
-                            <td>Εμφάνιση κειμένου στην οθόνη</td>
-                          </tr>
-                          <tr class="style2">
-                            <td><code>cin >> μεταβλητή;</code></td>
-                            <td>Διαβάζει τιμές από τον χρήστη από την κονσόλα.</td>
-                          </tr>
-                          <tr class="style2">
-                            <td><code>if</code></td>
-                            <td>Ελέγχει μια συνθήκη και εκτελεί κώδικα αν η συνθήκη είναι αληθής.</td>
-                          </tr>
-                          <tr class="style2">
-                            <td><code>else</code></td>
-                            <td>Εκτελεί κώδικα αν η συνθήκη στην <code>if</code> δεν είναι αληθής.</td>
-                          </tr>
-                          <tr class="style2">
-                            <td><code>for</code></td>
-                            <td>Επαναλαμβάνει έναν κομμάτι κώδικα για έναν ορισμένο αριθμό επαναλήψεων.</td>
-                          </tr>
-                          <tr class="style2">
-                            <td><code>while</code></td>
-                            <td>Επαναλαμβάνει έναν κομμάτι κώδικα όσο μια συνθήκη είναι αληθής.</td>
-                          </tr>
-                          <tr class="style2">
-                            <td><code>do-while</code></td>
-                            <td>Εκτελεί ένα κομμάτι κώδικα τουλάχιστον μία φορά και μετά επαναλαμβάνει τον κώδικα όσο μια συνθήκη είναι αληθής.</td>
-                          </tr>
-                          <tr class="style2">
-                            <td><code>switch</code></td>
-                            <td>Εκτελεί διαφορετικές ενέργειες ανάλογα με την τιμή μιας μεταβλητής.</td>
-                          </tr>
-                          <tr class="style2">
-                            <td><code>break</code></td>
-                            <td>Τερματίζει την εκτέλεση ενός βρόχου ή ενός switch statement.</td>
-                          </tr>
-                          <tr class="style2">
-                            <td><code>continue</code></td>
-                            <td>Παρακάμπτει τον υπόλοιπο κώδικα ενός βρόχου και συνεχίζει με την επόμενη επανάληψη.</td>
-                          </tr>
-                          <tr class="style2">
-                            <td><code>return</code></td>
-                            <td>Επιστρέφει μια τιμή από μια συνάρτηση.</td>
-                          </tr>
-                          <tr class="style2">
-                            <td><code>template <class GenericType></code></td>
-                            <td>Templates συναρτήσεων</td>
-                          </tr>
-                          <tr class="style2">
-                            <td><code>const type identifier = value;</code></td>
-                            <td>Δήλωση Σταθερά</td>
-                          </tr>
-                          <tr class="style2">
-                            <td><code>#define identifier_value</code></td>
-                            <td>Ορισμός Σταθερά</td>
-                          </tr>
-                      
-                          <tr class="style2">
-                            <td><code>type name [elements];</code></td>
-                            <td>Δήλωση Πίνακα</td>
-                          </tr>          
-                          <tr class="style2">
-                            <td><code>type name [rows] [columns];</code></td>
-                            <td>Δήλωση δισδιάστατων πινάκων</td>
-                          </tr>
-                      </table>
-                            <script src="https://grcodeclub.github.io/javascript/search_table_row_cells_0.js"></script>
+                    <p>Εμφάνιση κειμένου στην οθόνη</p>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-cpp">cout << "Κείμενο";	</code></pre></div></div>
 
+                    <p>Διαβάζει τιμές από τον χρήστη από την κονσόλα.</p>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-cpp">cin >> x;</code></pre></div></div>
+                    
+                    <p>Templates συναρτήσεων</p>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-cpp">template</code></pre></div></div>            
+                
+                    <p>Δήλωση Σταθερά</p>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-cpp">const type identifier = value;</code></pre></div></div>
+                
+                    <p>Ορισμός Σταθερά</p>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-cpp">#define identifier_value</code></pre></div></div>
+                
+                    <p>Δήλωση δισδιάστατων πινάκων</p>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-cpp">int x [2] [2];</code></pre></div></div>
+
+                    <p>Επιστρέφει μια τιμή από μια συνάρτηση.</p>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-cpp">return x;</code></pre></div></div>
+                </div>
                 </div><!-- Τέλος Background Κειμένου-->
 
             </div> <!--Τέλος Κειμένου-->
