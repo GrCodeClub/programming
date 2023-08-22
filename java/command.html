@@ -1,3 +1,4 @@
+
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=0.8">
@@ -13,6 +14,9 @@
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/list.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
         <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/code_bg.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/prism.css" />
+        <script src="https://grcodeclub.github.io/javascript/prism.js"></script>
         <title> GrCode Club</title>
     </head>
 
@@ -24,7 +28,7 @@
                         <tr>
                             <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
                             <td><h1 class="header_text"><span class="header_text">  GrCode Club </span></h1></td>
-                            <td><a href="https://github.com/GrCodeClub/grcodeclub.github.io/edit/main/programming/java/command.html" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png"  width="60px"></a></td>
+                            <td><a href="https://github.com/GrCodeClub/programming/edit/main/java/command.html" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png"  width="60px"></a></td>
                         </tr>
                     </table> 
                 </div> <!--Τέλος Επικεφαλίδας-->
@@ -46,142 +50,159 @@
                         </tr>
                     </table> 
                 </div> <!--Τέλος Επικεφαλίδας σε κινητά -->
-                <table>  <!--Αρχή Menu σε κινητά-->
-                    <tr>
-                        <td>
-                            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-                            <label for="openSidebarMenu" class="sidebarIconToggle">
-                                <div class="spinner diagonal part-1"></div>
-                                <div class="spinner horizontal"></div>
-                                <div class="spinner diagonal part-2"></div>
-                            </label>
-                            <div id="sidebarMenu" style="overflow: auto;">
-                                <ul class="sidebarMenuInner"></ul>
-                            </div>
-                        </td>
-                    </tr>
-                </table> <!--Τέλος Menu σε κινητά-->
+                <div>
+                    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                    <label for="openSidebarMenu" class="sidebarIconToggle">
+                        <div class="spinner diagonal part-1"></div>
+                        <div class="spinner horizontal"></div>
+                        <div class="spinner diagonal part-2"></div>
+                    </label>
+                    <div id="sidebarMenu" style="overflow: auto;">
+                        <ul class="sidebarMenuInner"></ul>
+                    </div>
+                </div>
             </section> <!--Τέλος εμφάνιση σε κινητά-->
 
             <div class="Text"> <!--Αρχή Κειμένου-->
                 <a href="../java.html"><img src="https://grcodeclub.github.io/file/logo_and_graphic/back.png" class="logo_back"></a>
                 <div class="text_bg"> <!-- Αρχή Background Κειμένου-->
                     <h1 class="title">Εντολές</h1>
-                    <div class="search"><input type="input" class="form__field" placeholder="Αναζήτηση Εντολής" id='searchInput'/></div>
-                     <table id="table" class="style2">
-                           <tr>   
-                               <th>Εντολή</th>
-                               <th>Περιγραφή</th>
-                           </tr>
-                           <tr  class="style2">
-                               <td><code> static void main(String[] args)</code></td>
-                               <td>Η μέθοδος που εκτελείται κατά την έναρξη του προγράμματος</td>
-                           </tr>
-                           <tr  class="style2">
-                               <td><code>int x = 5;</code></td>
-                               <td>Δήλωση μιας μεταβλητής τύπου int με την τιμή 5</td>
-                           </tr>
-                           <tr  class="style2">
-                               <td><code>String name = "John";</code></td>
-                               <td>Δήλωση μιας μεταβλητής τύπου String με την τιμή "John"</td>
-                           </tr>
-                           <tr class="style2">
-                               <td><code>import</code></td>
-                               <td>Χρησιμοποιείται για την εισαγωγή εξωτερικών κλάσεων ή πακέτων στην κλάση σας</td>
-                           </tr> 
-                           <tr class="style2">
-                               <td><code>System.out.println("Hello, World!");</code></td>
-                               <td>Εμφανίζει το κείμενο "Hello, World!" στην κονσόλα.</td>
-                             </tr>
-                             <tr class="style2">
-                               <td><code>if (x > 0) {</code><br>
-                                   <code>&nbsp;&nbsp;System.out.println("Το x είναι θετικό");</code><br>
-                                   <code>}</code></td>
-                               <td>Ελέγχει αν η τιμή της μεταβλητής x είναι μεγαλύτερη από το 0 και εμφανίζει το αντίστοιχο μήνυμα.</td>
-                             </tr>
-                             <tr class="style2">
-                               <td><code>for (int i = 0; i < 10; i++) {</code><br>
-                                   <code>&nbsp;&nbsp;System.out.println(i);</code><br>
-                                   <code>}</code></td>
-                               <td>Επαναλαμβάνει τον κώδικα μέχρι την εκτέλεση του συνθήκης i < 10, αυξάνοντας την τιμή της μεταβλητής i κατά 1 σε κάθε επανάληψη και εμφανίζει την τρέχουσα τιμή της i.</td>
-                             </tr>
-                              <tr class="style2">
-                               <td><code>while (x > 0) {</code><br>
-                                   <code>&nbsp;&nbsp;System.out.println(x);</code><br>
-                                   <code>&nbsp;&nbsp;x--;</code><br>
-                                   <code>}</code></td>
-                           <td>Επαναλαμβάνει τον κώδικα μέχρι την εκτέλεση του συνθήκης x > 0, μειώνοντας την τιμή της μεταβλητής x κατά 1 σε κάθε επανάληψη και εμφανίζει την τρέχουσα τιμή της x.</td>
-                           </tr>
-                           <tr class="style2">
-                               <td><code>MyClass myObject = new MyClass();</code></td>
-                               <td>Δημιουργία ενός αντικειμένου της κλάσης MyClass</td>
-                           </tr>
-                           <tr class="style2">
-                               <td><code>int result = addNumbers(3, 4);</code></td>
-                               <td>Κλήση μιας μεθόδου με ορίσματα και εκχώρηση του αποτελέσματος σε μια μεταβλητή</td>
-                           </tr>
-                           <tr class="style2">
-                               <td><code>int[] numbers = {1, 2, 3, 4, 5};</code></td>
-                               <td>Δήλωση και αρχικοποίηση ενός πίνακα ακεραίων</td>
-                           </tr>
-                           <tr class="style2">
-                               <td><code>String[] names = new String[5];</code></td>
-                               <td>Δήλωση ενός πίνακα αλφαριθμητικών με δεσμευμένη μνήμη για 5 στοιχεία</td>
-                           </tr>
-                           <tr class="style2">
-                               <td><code>int length = numbers.length;</code></td>
-                               <td>Επιστρέφει το μήκος του πίνακα numbers</td>
-                           </tr>
-                           <tr class="style2">
-                               <td><code>numbers[0] = 10;</code></td>
-                               <td>Εκχώρηση της τιμής 10 στο πρώτο στοιχείο του πίνακα numbers</td>
-                           </tr>
-                           <tr class="style2">
-                               <td><code>String text = "Hello";</code></td>
-                               <td>Δήλωση μιας μεταβλητής τύπου String</td>
-                           </tr>
-                           <tr class="style2">
-                               <td><code>static final</code></td>
-                               <td>- Χρησιμοποιείται για τον ορισμό σταθερών τιμών. Μια σταθερά τιμή δεν μπορεί να αλλάξει μετά την αρχικοποίησή της. </td>
-                           </tr>
-                           <tr class="style2">
-                               <td><code>instanceof</code></td>
-                               <td>Χρησιμοποιείται για τον έλεγχο του τύπου ενός αντικειμένου. </td>
-                           </tr>
-                           <tr class="style2">
-                               <td><code>hashCode()</code></td>
-                               <td>Μέθοδος που χρησιμοποιείται για την ανάκτηση του hash code ενός αντικειμένου. 
-                                   <br> Παράδειγμα: <br> <cdoe> int hashCode = obj.hashCode();</cdoe>
-                               </td>
-                           </tr>          
-                           <tr><td colspan="2" ><h1 style="text-align: center; background-color: blue; color: white">Σύγκριση</h1></td></tr>  
-                           <tr class="style2">
-                               <td><code>equals()</code></td>
-                               <td>Μέθοδος που χρησιμοποιείται για τη σύγκριση της ισότητας δύο αντικειμένων.
-                                   <br> Παράδειγμα: <br> <cdoe> if (obj1.equals(obj2)) { }</cdoe>
-                               </td>
-                           </tr>   
-                           <tr class="style2">
-                               <td><code>compareTo()</code></td>
-                               <td> Μέθοδος που χρησιμοποιείται για τη σύγκριση της σειράς δύο αντικειμένων.
-                                   <br> Παράδειγμα: <br> <cdoe> int result = obj1.compareTo(obj2);</cdoe>
-                               </td>
-                           </tr>
-                           <tr class="style2">
-                               <td><code>compareToIgnoreCase()</code></td>
-                               <td> Μέθοδος που χρησιμοποιείται για τη σύγκριση της σειράς δύο αλφαριθμητικών αγνοώντας την πεζή/κεφαλαία γραφή τους.
-                                   <br> Παράδειγμα: <br> <cdoe>int result = str1.compareToIgnoreCase(str2);</cdoe>
-                               </td>
-                           </tr>   
-                           <tr class="style2">
-                               <td><code>compare()</code></td>
-                               <td> Μέθοδος που χρησιμοποιείται για τη σύγκριση δύο αντικειμένων βάσει μιας προσαρμοσμένης συνάρτησης σύγκρισης.<br>Συνήθως χρησιμοποιείται σε συνδυασμό με το Comparator interface
-                                   <br> Παράδειγμα: <br> <cdoe>int result = comparator.compare(obj1, obj2);</cdoe>
-                               </td>
-                           </tr>     
-                         </table>
-                         <script src="https://grcodeclub.github.io/javascript/search_table_row_cells_0.js"></script>
-                </div><!-- Τέλος Background Κειμένου-->
+
+                    <p>Δήλωση και αρχικοποίηση μεταβλητών</p>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-java">public class VariableExample {
+    public static void main(String[] args) {
+        // Ακέραιος
+        int integerVariable = 10;
+                    
+        // Πραγματικός
+        double doubleVariable = 3.14;
+                    
+        // Χαρακτήρας
+        char charVariable = 'A';
+                    
+        // Λογική
+        boolean booleanVariable = true;
+                    
+        // Κείμενο (συμβολοσειρά)
+        String stringVariable = "Hello, World!";
+
+        System.out.println("Ακέραια μεταβλητή: " + integerVariable);
+        System.out.println("Πραγματική μεταβλητή: " + doubleVariable);
+        System.out.println("Χαρακτήρας: " + charVariable);
+        System.out.println("Boolean μεταβλητή: " + booleanVariable);
+        System.out.println("Κείμενο: " + stringVariable);
+    }
+}</code></pre></div></div>
+    
+
+                    <p>Εντολή εκτύπωσης</p>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-java">System.out.print("Κείμενο προς εκτύπωση");</code></pre></div></div>
+            
+                    <p>Εντολή εκτύπωσης με αλλαγή γραμμής</p>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-java">System.out.println("Κείμενο προς εκτύπωση");</code></pre></div></div>
+            
+
+                    <p>Εισαγωγή δεδομένων από τον χρήστη </p>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-java">import java.util.Scanner;
+
+    public class Main {
+        public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+                        
+        System.out.print("Εισαγάγετε έναν ακέραιο αριθμό: ");
+        int integerInput = scanner.nextInt();
+        System.out.println("Εισαγόμενος ακέραιος: " + integerInput);
+                        
+        System.out.print("Εισαγάγετε έναν πραγματικό αριθμό: ");
+        double doubleInput = scanner.nextDouble();
+        System.out.println("Εισαγόμενος πραγματικός: " + doubleInput);
+
+        // Καθαρίζει το buffer μετά την nextDouble          
+        scanner.nextLine(); 
+                        
+        System.out.print("Εισαγάγετε ένα κείμενο: ");
+        String stringInput = scanner.nextLine();
+        System.out.println("Εισαγόμενο κείμενο: " + stringInput);
+        // Κλείνει το Scanner όταν δεν χρειάζεται πλέον         
+        scanner.close(); 
+    }
+}</code></pre></div></div>
+
+
+                    <p>Δομή επιλογής (if-else)</p>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-java">if (συνθήκη) {
+    // Κώδικας που εκτελείται αν η συνθήκη είναι αληθής
+} else {
+    // Κώδικας που εκτελείται αν η συνθήκη είναι ψευδής
+}</code></pre></div></div>
+        
+
+                    <p>Βρόχος for</p>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-java">for (αρχικοποίηση; συνθήκη_επανάληψης; ανανέωση) {
+    // Κώδικας που εκτελείται σε κάθε επανάληψη
+}</code></pre></div></div>
+
+                    <p>Βρόχος while</p>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-java">while (συνθήκη) {
+    // Κώδικας που εκτελείται όσο η συνθήκη είναι αληθής
+}</code></pre></div></div>
+
+                    <p>Λίστες (ArrayList)</p>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-java">import java.util.ArrayList;
+ArrayList&lt;τύπος_στοιχείων&gt; όνομα_λίστας = new ArrayList&lt;&gt;();</code></pre></div></div>
+            
+            
+                    <p>Πίνακας</p>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-java">public class ArrayExample {
+    public static void main(String[] args) {
+        // Δήλωση πίνακα ακεραίων
+        int[] integerArray ;
+                    
+        // Δέσμευση μνήμης για τον πίνακα με 5 θέσεις
+        integerArray  = new int[5];
+                    
+        // Αρχικοποίηση των στοιχείων του πίνακα
+        integerArray [0] = 10;
+        integerArray [1] = 20;
+        integerArray [2] = 30;
+        integerArray [3] = 40;
+        integerArray [4] = 50;
+                    
+        // Εκτύπωση των στοιχείων του πίνακα
+        for (int i = 0; i < integerArray .length; i++) {
+            System.out.println("Στοιχείο στη θέση " + i + ": " + integerArray [i]);
+        }
+    }
+}</code></pre></div></div>
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div><!-- Τέλος Background Κειμένου-->
 
             </div> <!--Τέλος Κειμένου-->
 
