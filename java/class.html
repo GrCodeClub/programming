@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=0.8">
         <meta property="og:image" content="https://grcodeclub.github.io/file/background/3.png"/>
-        <meta property="og:title" content="Γλώσσα Προγραμματισμού Java | Class">
+        <meta property="og:title" content="Γλώσσα Προγραμματισμού Java  | Class">
         <script src="https://grcodeclub.github.io/javascript/jquery.js"></script>
         <script src="https://grcodeclub.github.io/programming/javascript/menu.js"></script>
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/header_and_footer.css">
@@ -102,6 +102,19 @@ public int age; // public μεταβλητή</code></pre></div></div>
             <div class="bg_preview">
             <div  class="line-numbers"><pre class="code_editor"><code class="language-java">objectName.methodName(parameters);
 objectName.fieldName;</code></pre></div></div>
+
+            <p>Το this χρησιμοποιείται για να αναφερθεί στις μεταβλητές του τρέχοντος αντικειμένου της κλάσης.</p>
+            <p></p>
+            <div class="bg_preview">
+                <div  class="line-numbers"><pre class="code_editor"><code class="language-java">public Vehicle(String make, String model, int year, double price) {
+    // Η εκχώρηση της τιμής της παραμέτρου make στην μεταβλητή make του τρέχοντος αντικειμένου της κλάσης Vehicle.
+    // Το this.make αναφέρεται στην μεταβλητή make του τρέχοντος αντικειμένου, ενώ το make αναφέρεται στην παράμετρο του κατασκευαστή.
+    this.make = make;
+    this.model = model;
+    this.year = year;
+    this.price = price;
+}</code></pre></div></div>
+    
     
 
             <p><u>Παράδειγμα</u></p>
