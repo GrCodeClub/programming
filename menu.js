@@ -15,7 +15,7 @@ $(document).ready(function() {
     menuLink = '<li><a href="https://grcodeclub.github.io/programming/c++.html">C++</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     
-    menuLink = '<li><a href="https://grcodeclub.github.io/programming/java.html">Java</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.github.io/java.html">Java</a></li>';
      $('.sidebarMenuInner').append(menuLink);
     
     menuLink = '<li><a href="https://grcodeclub.github.io/python">Python</a></li>';
