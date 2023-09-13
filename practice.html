@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <meta property="og:image" content="https://grcodeclub.github.io/file/background/3.png"/>
+        <meta property="og:title" content="Προγραμματισμός - Εξάσκηση">
+        <script src="https://grcodeclub.github.io/js/jquery.js"></script>
+        <script src="https://grcodeclub.github.io/programming/menu.js"></script>
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/header_and_footer.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/main.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/text.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/table.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/layout.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/list.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
+        <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
+        <title> GrCode Club</title>
+    </head>
+
+    <body class="programming">
+        <div class="container">
+            <section class="show_desktop"> <!--Αρχή Εμφάνιση Υπολογιστή-->
+                <div class="Header"> <!--Αρχή Επικεφαλίδας-->
+                    <table>
+                        <tr>
+                            <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
+                            <td><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></td>
+                            <td><a href="https://github.com/GrCodeClub/programming/edit/main/index.html" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png"  width="60px"></a></td>
+                        </tr>
+                    </table> 
+                </div> <!--Τέλος Επικεφαλίδας-->
+           
+                <div class="Menu"> <!--Αρχή Menu-->
+                    <div id="sidebarMenu" style="  overflow: auto;">
+                        <ul class="sidebarMenuInner"></ul>
+                    </div>
+                </div><!--Τέλος Menu-->
+
+            </section> <!--Τέλος Εμφάνιση Υπολογιστή-->
+
+            <section class="show_mobile">  <!--Αρχή εμφάνιση σε κινητά-->
+                <div class="Header"> <!--Αρχή Επικεφαλίδας σε κινητά-->
+                    <table>
+                        <tr>
+                            <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
+                            <td><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></td>
+                        </tr>
+                    </table> 
+                </div> <!--Τέλος Επικεφαλίδας σε κινητά -->
+                <div>
+                    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                    <label for="openSidebarMenu" class="sidebarIconToggle">
+                        <div class="spinner diagonal part-1"></div>
+                        <div class="spinner horizontal"></div>
+                        <div class="spinner diagonal part-2"></div>
+                    </label>
+                    <div id="sidebarMenu" style="overflow: auto;">
+                        <ul class="sidebarMenuInner"></ul>
+                    </div>
+                </div>
+            </section> <!--Τέλος εμφάνιση σε κινητά-->
+
+            <div class="Text"> <!--Αρχή Κειμένου-->
+                <div class="text_bg"> <!-- Αρχή Background Κειμένου-->
+                   <h1 class="title">Εξάσκηση</h1>
+                   <h3 class="highlight_blue"> ΒΑΣΙΚΕΣ ΕΝΤΟΛΕΣ ΕΙΣΟΔΟΥ – ΕΞΟΔΟΥ</h3>
+                <p>
+                    <ol>
+                        <li>Να γραφεί κώδικας, ο οποίος, εισάγει από το πληκτρολόγιο δύο ακεραίους αριθμούς, υπολογίζει και εμφανίζει στην οθόνη το άθροισμά τους.</li>
+                        <li>Υλοποιήστε ένα πρόγραμμα που υπολογίζει τις τιμές όλων των ακέραιων αριθμών από το 0 έως το 10 στο τετράγωνο και στον κύβο. </li>
+                        <li>Να γραφεί κώδικας ο οποίος δέχεται δύο σταθερά αλφαριθμητικά με τιμές «GrCode» και «Club», τις συνενώνει και εμφανίζει στην οθόνη το μήνυμα «GrCode Club».</li>
+                        <li>Να γραφεί κώδικας ο οποίος δέχεται δύο σταθερά αλφαριθμητικά με τιμές «Καλημέρα» και «Ελλάδα», τις συνενώνει και εμφανίζει στην οθόνη το μήνυμα «Καλημέρα Ελλάδα».</li>
+                    </ol>                   
+                </p>
+                <h3 class="highlight_blue">ΔΟΜΕΣ ΕΛΕΓΧΟΥ</h3>
+                <p>
+                    <ol>
+                        <li>Να γραφεί κώδικας, ο οποίος, εισάγει από το πληκτρολόγιο δύο αριθμητικές τιμές και εμφανίζει στην οθόνη τη μεγαλύτερη από αυτές</li>
+                        <li>
+                            Μια εταιρία κινητής τηλεφωνίας ακολουθεί την παρακάτω τιμολογιακή πολιτική (<u>Η χρεώσει θα είναι κλιμακωτή</u>)
+                            <ol>
+                                <li>1-500sec : 0,005€ (Χρονοχρέωση)</li>
+                                <li>501 – 800sec : 0,004€ (Χρονοχρέωση)</li>
+                                <li>801 - 1000sec : 0,002€ (Χρονοχρέωση)</li>
+                                <li>1001 και άνωsec : 0,001€ (Χρονοχρέωση)</li>
+                            </ol>
+                        </li>
+                        <li>Να γραφεί κώδικας ο οποίος εισάγει από το πληκτρολόγιο δύο ακέραιους αριθμούς και το σύμβολο μιας πράξης (+, -, *, /, %). Εκτελεί την αντίστοιχη πράξη μεταξύ των δύο αριθμών και εμφανίζει το αποτέλεσμα στην οθόνη. Να γίνεται έλεγχος για πιθανή διαίρεση με το μηδέν. Το σύμβολο % εκτελεί διαίρεση ακεραίου υπολοίπου.</li>
+                        <li>Να γραφεί κώδικας, ο οποίος εισάγει από το πληκτρολόγιο, το μήκος, το πλάτος και το ύψος ενός κουτιού, υπολογίζει και εμφανίζει στην οθόνη τον όγκο του, δίνοντας παράλληλα την δυνατότητα στον χρήστη να εισάγει τις μονάδες μέτρησης (μέτρα ή πόδια).</li>
+                    </ol>
+                </p>
+                <h3 class="highlight_blue">ΔΟΜΕΣ ΕΠΑΝΑΛΗΨΗΣ</h3>
+                <ol>
+                    <li>Να γραφεί κώδικας, ο οποίος, εμφανίζει στην οθόνη τους αριθμούς από 1 έως 100.</li>
+                    <li>Να γραφεί κώδικας, ο οποίος εμφανίζει στην οθόνη τους περιττούς αριθμούς από 1 έως 1000.</li>
+                    <li>Να γραφεί κώδικας ο οποίος υπολογίζει και εμφανίζει το μέσο όρο, το άθροισμα και το γινόμενο των περιττών αριθμών από 1 έως Ν.</li>
+                    <li>Να γραφεί κώδικας ο οποίος εισάγει από το πληκτρολόγιο 10 ακεραίους αριθμούς και εμφανίζει στην οθόνη τον μεγαλύτερο και τον μικρότερο από αυτούς.</li>
+                    <li>Να γραφεί κώδικας ο οποίος εισάγει από το πληκτρολόγιο 10 ακεραίους αριθμούς, υπολογίζει και εμφανίζει στην οθόνη τον Μέσο Όρο των Αρτίων και τον Μέσο Όρο των Περιττών.</li>
+                    <li>Να γραφεί κώδικας ο οποίος εισάγει από το πληκτρολόγιο 10 ακεραίους αριθμούς και εμφανίζει στην οθόνη τον μεγαλύτερο και τον μικρότερο από αυτούς.</li>
+                    <li>Να γραφεί κώδικας ο οποίος εισάγει από το πληκτρολόγιο 10 ακεραίους αριθμούς, υπολογίζει και εμφανίζει στην οθόνη το πλήθος των Θετικών, των Αρνητικών και των Μηδέν.</li>
+                    <li>Να γραφεί κώδικας ο οποίος διαβάζει από το πληκτρολόγιο αριθμούς εωσότου δοθεί μηδέν. Υπολογίζει και εμφανίζει στην οθόνη το άθροισμά τους, τον μέσο όρο τους, τον μέγιστο και τον ελάχιστο από αυτούς.</li>
+                </ol>
+                <h3 class="highlight_blue"> ΠΙΝΑΚΕΣ ΚΑΙ ΣΤΗ ΔΙΑΧΕΙΡΙΣΗ ΑΛΦΑΡΙΘΜΗΤΙΚΩΝ.</h3>
+                <ol>
+                    <li>Να γραφεί κώδικας, ο οποίος αρχικοποιεί από το πληκτρολόγιο ένα μονοδιάστατο πίνακα ακεραίων 5 θέσεων και εμφανίζει τα περιεχόμενά του</li>
+                    <li>Να γραφεί κώδικας, ο οποίος ορίζει πίνακα ακεραίων 10 θέσεων, τον αρχικοποιεί από το πληκτρολόγιο, υπολογίζει και εμφανίζει στην οθόνη τον μέσο όρο των στοιχείων του.</li>
+                    <li>Να γραφεί κώδικας, ο οποίος εισάγει από το πληκτρολόγιο ένα αλφαριθμητικό και το εμφανίζει στην οθόνη κάθετα.</li>
+                    <li>Να γραφεί κώδικας, ο οποίος εισάγει από το πληκτρολόγιο ένα αλφαριθμητικό και το εμφανίζει ανεστραμμένο.</li>
+                </ol>
+                </div><!-- Τέλος Background Κειμένου-->
+            </div> <!--Τέλος Κειμένου-->
+
+        </div> <!--Τέλος container-->
+        
+        <!-- Footer -->
+        <footer>
+            <table class="add_footer"></table>
+            <script src="https://grcodeclub.github.io/js/footer.js"></script>       
+        </footer>
+    </body>
+</html>
