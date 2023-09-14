@@ -67,7 +67,7 @@
                    <h1 class="title">SQL</h1>
 
                    <h3 class="highlight_blue">Δημιουργία Βάσης Δεδομένων</h3>
-
+                    <p>Διαγράφουμε την Βάση Δεδομένων με όνομα register αν υπάρχει. Αυτό το χρησιμοποιούμε αν έλουμε να φτιάξουμε μια καινούργια Βάση Δεδομένων και υπάρχει ήδη μια,με το ίδιο όνομα.</p>
                     <div class="bg_preview">
                     <div  class="line-numbers"><pre class="code_editor"><code class="language-SQL">DROP DATABASE IF EXISTS register;</code></pre></div></div>
                         
@@ -76,17 +76,21 @@
                     <div  class="line-numbers"><pre class="code_editor"><code class="language-SQL">CREATE DATABASE register;</code></pre></div></div>
 
                     <div class="bg_preview">
-                    <div  class="line-numbers"><pre class="code_editor"><code class="language-SQL">USE atm;</code></pre></div></div>
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-SQL">USE register;</code></pre></div></div>
     
 
                     <h3 class="highlight_blue">Δημιουργία και επεξεργασία πινάκων</h3>
-                   <p>CREATE TABLE: Χρησιμοποιείται για τη δημιουργία μιας νέας πίνακα στη βάση δεδομένων.</p>
+                   <p>Δημιουργούμε έναν πίνακα με όνομα users. Τα πεδία που θα έχει ο πίνακας θα είναι </p>
+                   <ol>
+                        <li>ID, το οποίο θα είναι int  και θα το ορίσουμε ως PRIMARY KEY. Επειδή θα είναι PRIMARY KEY θα το βάλουμε και ως NOT NULL.</li>
+                        <li>username,  το οποίο θα είναι VARCHAR(50)</li>
+                    </ol>
                    <div class="bg_preview">
                    <div  class="line-numbers"><pre class="code_editor"><code class="language-SQL">CREATE TABLE users (
     id INT PRIMARY KEY,
     username VARCHAR(50));</code></pre></div></div>
                     <p>PRIMARY KEY : Μια τιμή που προσδιορίζει με μοναδικό τρόπο μια εγγραφή σε έναν πίνακα.</p>
-                    <p>DROP TABLE: Χρησιμοποιείται για τη διαγραφή ενός πίνακα από τη βάση δεδομένων.</p>
+                    <p>Διαγραφή ενός πίνακα από τη βάση δεδομένων.</p>
                     <div class="bg_preview">
                     <div  class="line-numbers"><pre class="code_editor"><code class="language-SQL">DROP TABLE users;</code></pre></div></div>
                 
