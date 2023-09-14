@@ -70,15 +70,15 @@
                     <p>Η λογική του Docker, είναι ότι σηκώνουμε ένα container για κάθε service που θέλουμε.</p>
                     <h2 class="highlight_blue">Container</h2>
                     <p>Ένα Docker Container χρησιμοποιεί το λειτουργικό και τον πυρήνα του host καθως δεν έχει δικό του πυρήνα. 
-                        Με αποτέλεσμα να είναι πολύ ελαφρύ και να ξοδεύει μόνο τα αναγκαία resources, για να τρέξουν τα services που θέλει.
-                    <br>Κάθε container είναι πλήρως απομονωμένο από το host λειτουργικό και από άλλα containers
-                    <br>Κάθε container δεν κρατάει δεδομένα μέσα του. Δηλαδή αν τρέχουμε ένα container με mySQL, τα δεδομένα της βάσης θα χαθούν αν κάνουμε restart το service</p>
+                        Με αποτέλεσμα να είναι πολύ ποιο ελαφρύ και να ξοδεύει μόνο τα αναγκαία resources, για να τρέξουν τα services που θέλει.
+                    <br>Κάθε container είναι πλήρως απομονωμένο από το host λειτουργικό και από άλλα containers.
+                    <br>Κάθε container δεν κρατάει δεδομένα μέσα του. Δηλαδή αν τρέχουμε ένα container με mySQL, τα δεδομένα της βάσης θα χαθούν αν κάνουμε restart</p>
                     
                     <p><u>Βασικές εντολές διαχείρισης container</u></p>
                     <p>Για να δούμε λοιπόν μία γενική εικόνα των container που έχουμε στο σύστημά μας, δίνουμε την εντολή:</p>
                     <div class="terminal" ><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker ps -a</code></pre>           
                     <pre><code class="language-bash" >CONTAINER ID    IMAGE              COMMAND            CREATED         STATUS          PORTS                NAMES
-8b3a2f0d4e25    nginx:latest       "nginx -g 'daemon   2 hours ago     Up 2 hours      0.0.0.0:80->80/tcp   web_server</code></pre></div>                
+8b3a2f0d4e25    nginx:latest       "nginx -g 'daemon   2 hours ago     Up 2 hours      0.0.0.0:80->80/tcp   apache</code></pre></div>                
 
                     <ul>
                         <li>CONTAINER ID: Ο αριθμός του κάθε container στο σύστημά μας. Μπορούμε να τον χρησιμοποιήσουμε για να διαγράψουμε (π.χ. web_server) ένα container αν δε θέλουμε να χρησιμοποιήσουμε το όνομά του.</li>
@@ -90,20 +90,20 @@
                     </ul>
 
 
-                    <p>Για να σταματήσουμε ένα container (π.χ web_server) δίνουμε την εντολή:</p>
-                    <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker stop web_server</code></pre></div>                
+                    <p>Να σταματήσουμε ένα container (π.χ apache).</p>
+                    <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker stop apache</code></pre></div>                
 
-                    <p>Αντίστοιχα για να το ξεκινήσουμε και πάλι δίνουμε την εντολή:</p>
-                    <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker start web_server</code></pre></div>
+                    <p>Να ξεκινήσουμε ένα container (π.χ apache)</p>
+                    <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker start apache</code></pre></div>
                     
-                    <p>Για να αφαιρέσουμε ένα container (π.χ web_server) από το σύστημά μας θα πρέπει πρώτα να το σταματήσουμε και μετά να το διαγράψουμε.</p>
-                    <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker rm -f web_server</code></pre></div>
+                    <p>Για να αφαιρέσουμε ένα container (π.χ apache) από το σύστημά μας θα πρέπει πρώτα να το σταματήσουμε και μετά να το διαγράψουμε.</p>
+                    <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker rm -f apache</code></pre></div>
 
                     <p>Για να διαγράψουμε μαζικά όλα τα container που έχουμε σταματημένα δίνουμε την εντολή</p>
                     <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker container prune</code></pre></div>
 
-                    <p>Με την ακόλουθη μπορούμε να μάθουμε το port για ένα συγκεκριμένο container (π.χ web_server). </p>
-                    <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker port web_server</code></pre></div>
+                    <p>Να μας εμφανίσιμή την port για ένα συγκεκριμένο container (π.χ apache). </p>
+                    <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker port apache</code></pre></div>
 
 
 
@@ -119,22 +119,22 @@
 hello-world             latest              bf756fb1ae65        4 months ago        13.3kB</code></pre></div>
 
 
-                    <p>Για να κατεβάσουμε λοιπόν ένα image (π.χ. ubuntu) στον υπολογιστή μας, δίνουμε την εντολή</p>
+                    <p>Για να κατεβάσουμε λοιπόν ένα image (π.χ. ubuntu)</p>
                     <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker pull ubuntu:20.04</code></pre></div>
                     
-                    <p>Για να διαγράψουμε ένα image, προτιμότερο είναι να δώσουμε το "ID" του (π.χ. "bf756fb1ae65") ως εξής:</p>
+                    <p>Για να διαγράψουμε ένα image με βάση το ID  </p>
                     <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker rmi bf756fb1ae65</code></pre></div>
 
-                    <p>Αν όμως να έχουμε στο σύστημά μας περισσότερα από ένα image με το ίδιο "ID"</p>
+                    <p>Αν υπάρχουν περισσότερα από ένα image με το ίδιο ID έχουμε στο σύστημά.</p>
                     <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker rmi -f bf756fb1ae65</code></pre></div>
 
-                    <p>Για να διαγράψουμε τέλος όλα τα αχρησιμοποίητα image, αυτά δηλαδή που δε σχετίζονται με κάποιο container ή δεν είναι συνδεδεμένα σε κάποιο volume η εντολή είναι η εξής:</p>
+                    <p>Για να διαγράψουμε τέλος όλα τα αχρησιμοποίητα image.</p>
                     <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker image prune</code></pre></div>
 
                     <h2 class="highlight_blue">Dockerfile</h2>
-                    <p>Το Dockerfile είναι ένα αρχείο κειμένου που χρησιμοποιείται στην τεχνολογία του Docker για την δημιουργία Docker Image.</p>
+                    <p>Το Dockerfile είναι ένα αρχείο κειμένου που χρησιμοποιείται για την δημιουργία Docker Image.</p>
                 
-                    <p>Η <b>FROM</b> υτή η εντολή καθορίζει ποια βασική εικόνα θα χρησιμοποιηθεί ως βάση για τη νέα εικόνα.>Παράδειγμα:</p>
+                    <p>Η <b>FROM</b> αυτή η εντολή καθορίζει ποια βασική εικόνα θα χρησιμοποιηθεί ως βάση για τη νέα εικόνα.>Παράδειγμα:</p>
                     <div class="bg_preview">
                     <div  class="line-numbers"><pre class="code_editor"><code class="language-dockerfile">FROM ubuntu:20.04</code></pre></div></div>
                     
