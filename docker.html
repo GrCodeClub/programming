@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/header_and_footer.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/main.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/text.css">
-        <link rel="stylesheet" href="https://grcodeclub.github.io/css/table.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/layout.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/list.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
@@ -23,51 +22,43 @@
         <div class="container">
             <section class="show_desktop"> <!--Αρχή Εμφάνιση Υπολογιστή-->
                 <div class="Header"> <!--Αρχή Επικεφαλίδας-->
-                    <table>
-                        <tr>
-                            <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
-                            <td><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></td>
-                            <td><a href="https://github.com/GrCodeClub/programming/edit/main/docker.html" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png"  width="60px"></a></td>
-                        </tr>
-                    </table> 
+                    <div class="layout">
+                        <div><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></div>
+                        <div><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></div>
+                        <div><a href="https://github.com/GrCodeClub/programming/edit/main/docker.html" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png"  width="60px"></a></div>
+                    </div> 
                 </div> <!--Τέλος Επικεφαλίδας-->
-           
                 <div class="Menu"> <!--Αρχή Menu-->
                     <div id="sidebarMenu" style="  overflow: auto;">
                         <ul class="sidebarMenuInner"></ul>
                     </div>
                 </div><!--Τέλος Menu-->
-
             </section> <!--Τέλος Εμφάνιση Υπολογιστή-->
 
             <section class="show_mobile">  <!--Αρχή εμφάνιση σε κινητά-->
                 <div class="Header"> <!--Αρχή Επικεφαλίδας σε κινητά-->
-                    <table>
-                        <tr>
-                            <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
-                            <td><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></td>
-                        </tr>
-                    </table> 
+                    <div class="layout">
+                        <div><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></div>
+                        <div><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></div>
+                    </div> 
                 </div> <!--Τέλος Επικεφαλίδας σε κινητά -->
-                <div>
-                    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-                    <label for="openSidebarMenu" class="sidebarIconToggle">
-                        <div class="spinner diagonal part-1"></div>
-                        <div class="spinner horizontal"></div>
-                        <div class="spinner diagonal part-2"></div>
-                    </label>
-                    <div id="sidebarMenu">
-                        <ul class="sidebarMenuInner"></ul>
-                    </div>
+                <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                <label for="openSidebarMenu" class="sidebarIconToggle">
+                    <div class="spinner diagonal part-1"></div>
+                    <div class="spinner horizontal"></div>
+                    <div class="spinner diagonal part-2"></div>
+                </label>
+                <div id="sidebarMenu">
+                    <ul class="sidebarMenuInner"></ul>
                 </div>
             </section> <!--Τέλος εμφάνιση σε κινητά-->
 
             <div class="Text"> <!--Αρχή Κειμένου-->
                 <div class="text_bg"> <!-- Αρχή Background Κειμένου-->
-                    <h1 class="title">Docker </h1>
-                    
+                    <h1 class="title">Docker </h1>  
                     <p>Το Docker είναι μια πλατφόρμα ανοικτού κώδικα που χρησιμοποιείται για την αυτοματοποίηση, την ανάπτυξη και την εκτέλεση εφαρμογών μέσα σε περιβάλλοντα περιορισμένων πόρων, γνωστά ως "containers".</p>
                     <p>Η λογική του Docker, είναι ότι σηκώνουμε ένα container για κάθε service που θέλουμε.</p>
+                    
                     <h2 class="highlight_blue">Container</h2>
                     <p>Ένα Docker Container χρησιμοποιεί το λειτουργικό και τον πυρήνα του host καθως δεν έχει δικό του πυρήνα. 
                         Με αποτέλεσμα να είναι πολύ ποιο ελαφρύ και να ξοδεύει μόνο τα αναγκαία resources, για να τρέξουν τα services που θέλει.
@@ -78,9 +69,7 @@
                     <p>Για να δούμε λοιπόν μία γενική εικόνα των container που έχουμε στο σύστημά μας, δίνουμε την εντολή:</p>
                     <div class="terminal" ><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker ps -a</code></pre>           
                     <pre><code class="language-bash" >CONTAINER ID    IMAGE              COMMAND            CREATED         STATUS          PORTS                NAMES
-8b3a2f0d4e25    nginx:latest       "nginx -g 'daemon   2 hours ago     Up 2 hours      0.0.0.0:80->80/tcp   apache</code></pre></div>                
-
-                    <ul>
+8b3a2f0d4e25    nginx:latest       "nginx -g 'daemon   2 hours ago     Up 2 hours      0.0.0.0:80->80/tcp   apache</code></pre></div><ul>
                         <li>CONTAINER ID: Ο αριθμός του κάθε container στο σύστημά μας.</li>
                         <li>IMAGE: Η υπηρεσία που τρέχει το κάθε container.</li>
                         <li>CREATED: Πότε δημιουργήθηκε το container.</li>
@@ -89,55 +78,38 @@
                         <li>NAMES: Εδώ είναι τα ονόματα που τους έχουμε δώσει.</li>
                     </ul>
 
-
                     <p>Να σταματήσουμε ένα container (π.χ apache).</p>
                     <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker stop apache</code></pre></div>                
-
                     <p>Να ξεκινήσουμε ένα container (π.χ apache)</p>
-                    <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker start apache</code></pre></div>
-                    
+                    <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker start apache</code></pre></div>                    
                     <p>Για να αφαιρέσουμε ένα container (π.χ apache) από το σύστημά μας θα πρέπει πρώτα να το σταματήσουμε και μετά να το διαγράψουμε.</p>
                     <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker rm -f apache</code></pre></div>
-
                     <p>Για να διαγράψουμε μαζικά όλα τα container που έχουμε σταματημένα δίνουμε την εντολή</p>
                     <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker container prune</code></pre></div>
-
                     <p>Να μας εμφανίσιμή την port για ένα συγκεκριμένο container (π.χ apache). </p>
                     <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker port apache</code></pre></div>
 
-
-
-
                     <h2 class="highlight_blue">Docker Image</h2>
-                    <p>Το Docker Image αποτελεί ένα αρχείο που περιλαμβάνει τις απαραίτητες οδηγίες για τη δημιουργία ενός container.</p>
-                
+                    <p>Το Docker Image αποτελεί ένα αρχείο που περιλαμβάνει τις απαραίτητες οδηγίες για τη δημιουργία ενός container.</p>              
                     <p><u>Βασικές εντολές διαχείρισης image</u></p>
-
                     <p>Για να δούμε τώρα πόσα image βρίσκονται στον υπολογιστή μας.</p>
                     <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker images</code></pre>
-                        <pre><code class="language-bash">REPOSITORY              TAG                 IMAGE ID            CREATED             SIZE
+                    <pre><code class="language-bash">REPOSITORY              TAG                 IMAGE ID            CREATED             SIZE
 hello-world             latest              bf756fb1ae65        4 months ago        13.3kB</code></pre></div>
-
-
                     <p>Για να κατεβάσουμε λοιπόν ένα image (π.χ. ubuntu)</p>
                     <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker pull ubuntu:20.04</code></pre></div>
-                    
                     <p>Για να διαγράψουμε ένα image με βάση το ID  </p>
                     <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker rmi bf756fb1ae65</code></pre></div>
-
                     <p>Αν υπάρχουν περισσότερα από ένα image με το ίδιο ID έχουμε στο σύστημά.</p>
                     <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker rmi -f bf756fb1ae65</code></pre></div>
-
                     <p>Για να διαγράψουμε τέλος όλα τα αχρησιμοποίητα image.</p>
                     <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">docker image prune</code></pre></div>
-
                     <h2 class="highlight_blue">Dockerfile</h2>
                     <p>Το Dockerfile είναι ένα αρχείο κειμένου που χρησιμοποιείται για την δημιουργία Docker Image.</p>
-                
                     <p>Η <b>FROM</b> αυτή η εντολή καθορίζει ποια βασική εικόνα θα χρησιμοποιηθεί ως βάση για τη νέα εικόνα.>Παράδειγμα:</p>
                     <div class="bg_preview">
                     <div  class="line-numbers"><pre class="code_editor"><code class="language-dockerfile">FROM ubuntu:20.04</code></pre></div></div>
-                    
+                  
                     <p>Η <b>RUN</b> εκτελεί μια εντολή στο εσωτερικό της εικόνας κατά τη δημιουργία της. Χρησιμοποιείται για την εγκατάσταση πακέτων και την εκτέλεση εντολών.</p>
                     <div class="bg_preview">
                     <div  class="line-numbers"><pre class="code_editor"><code class="language-dockerfile">RUN apt-get update && apt-get install -y nginx</code></pre></div></div>
