@@ -13,3 +13,10 @@ __Id:__ george-alisson.html-preview-vscode
 
 __Name:__ HTML CSS Support<br>
 __Id:__ ecmel.vscode-html-css
+
+## Markdown
+__Name:__ Markdown Preview Enhanced <br>
+__Id:__ shd101wyy.markdown-preview-enhanced
+
+__Name:__ Markdown Export DF,PNG,HTML,JPEG<br>
+__Id:__ yzane.markdown-pdf
