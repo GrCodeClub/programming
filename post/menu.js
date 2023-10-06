@@ -27,13 +27,13 @@ $(document).ready(function() {
     menuLink = '<li><a href="https://grcodeclub.github.io/nodejs/">Node.js</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
-    menuLink = '<li><a href="https://grcodeclub.github.io/programming/sql.html">SQL</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.github.io/programming/post/sql.html">SQL</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     
-    menuLink = '<li><a href="https://grcodeclub.github.io/programming/docker.html">Docker</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.github.io/programming/post/docker.html">Docker</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     
-    menuLink = '<li><a href="https://grcodeclub.github.io/programming/markdown.html">Markdown</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.github.io/programming/post/markdown.html">Markdown</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
     menuLink = '<li style="height: 200px;"></li>';
