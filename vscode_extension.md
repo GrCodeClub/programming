@@ -3,6 +3,10 @@
 __Name:__ Python<br>
 __Id:__ ms-python.python
 
+## Preview
+__Name:__ Live Preview
+__Id:__ ms-vscode.live-server
+
 ## C/C++
 __Name:__ C/C++<br>
 __Id:__ ms-vscode.cpptools
