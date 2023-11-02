@@ -6,7 +6,7 @@ $(document).ready(function() {
     menuLink = ' <li><a href="https://grcodeclub.github.io/programming/">Προγραμματισμός</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
-    menuLink = ' <li><a href="https://grcodeclub.github.io/programming/practice.html">Εξάσκηση</a></li>';
+    menuLink = ' <li><a href="https://grcodeclub.github.io/programming/post/practice.html">Εξάσκηση</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     
     menuLink = '<li><a href="https://grcodeclub.github.io/c">C</a></li>';
