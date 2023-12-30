@@ -1,4 +1,5 @@
 
+
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=0.8">
@@ -9,7 +10,7 @@
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/main.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/text.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/layout.css">
-        <link rel="stylesheet" href="https://grcodeclub.github.io/css/list.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/table.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
         <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
         <title> GrCode Club</title>
@@ -53,8 +54,21 @@
 
         <div class="Text"> <!--ΑΡΧΗ Text-->
             <div class="text_bg">
-                <h1 class="title">Oρολογία</h1>
-                
+                <h1 class="title">Oρολογία
+                <div  class="search"><input type="input" class="form__field" placeholder="Αναζήτηση" id='searchInput'/></div>
+            </h1><br>
+                <table ID="table" class="style2">
+                    <tr>
+                        <td>Πρωτόκολλο</td>
+                        <td>Περιγραφή</td>
+                    </tr>
+                    <tr class="style2">
+                        <td>Μεταβλητή</td>
+                        <td>Μεταβλητή είναι μια θέση μνήμης στον υπολογιστή την οποία έχουμε δεσμεύσει και της έχουμε ορίσει ένα όνομα. Το περιεχόμενο της συγκεκριμένης θέσης μνήμης είναι η τιμή της συγκεκριμένης μεταβλητής.</td>
+                    </tr>
+                    
+                </table>
+                <script src="https://grcodeclub.github.io/javascript/search/search_table_row_cells_0.js"></script>
         </div> <!--ΤΕΛΟΣ Text-->
 
     </div> <!--ΤΕΛΟΣ container-->
