@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/code_bg.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/prism.css" />
+        <script src="https://grcodeclub.github.io/js/prism.js"></script>
         <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
         <title> GrCode Club</title>
     </head>
@@ -24,7 +25,7 @@
                     <div class="layout">
                         <div><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></div>
                         <div><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></div>
-                        <div><a href="https://github.com/GrCodeClub/programming/edit/main/index.html" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png"  width="60px"></a></div>
+                        <div><a href="https://github.com/GrCodeClub/programming/edit/main/post/more/sort.html" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png"  width="60px"></a></div>
                     </div> 
                 </div> <!--Τέλος Επικεφαλίδας-->
                 <div class="Menu"> <!--Αρχή Menu-->
@@ -64,29 +65,72 @@
                       <li>Ανταλλαγή του ελάχιστου με το πρώτο αταξινόμητο στοιχείο: Μόλις βρεθεί το ελάχιστο στοιχείο, αυτό ανταλλάσσεται με το πρώτο στοιχείο του αταξινόμητου μέρους του πίνακα. Έτσι, το ελάχιστο στοιχείο τίθεται στην κατάλληλη θέση του ταξινομημένου τμήματος του πίνακα.</li>
                       <li>Επανάληψη μέχρι ταξινομηθούν όλα τα στοιχεία: Η διαδικασία επαναλαμβάνεται, επιλέγοντας το επόμενο ελάχιστο στοιχείο από το υπόλοιπο αταξινόμητο μέρος του πίνακα και τοποθετώντας το στη σωστή θέση.</li>
                     </ol>
-                    <label style="margin-left: 10px;">Διάλεξε αρχείο</label>
-                    <select id="code" name="code" style="color: white;border-radius: 10px; background-color: rgba(0, 0, 0, 0.795); border: none;
-                    font-size: 18px; outline: none; cursor: pointer;">
-                        <option value="-"></option>
-                        <option value="https://grcodeclub.github.io/python//sort/InsertionSort.py">InsertionSort.py</option>
-                    </select>
-                    <br><br>
-                    <div class="bg_preview">
-                        <div class="appearance">
-                            <div class="space">
-                                <div class="buttons1"> </div>
-                                <div class="buttons2"> </div>
-                                <div class="buttons3"></div>
-                            </div>
-                            <div id="name"></div>
-                        </div>
-                        <div id="load">  </div>
-                    </div>
-                    <script src="https://grcodeclub.github.io/js/preview_code.js"></script>
+                      <label style="margin-left: 10px;">Διάλεξε αρχείο</label>
+                      <select id="code" name="code" style="color: white;border-radius: 10px; background-color: rgba(0, 0, 0, 0.795); border: none;
+                      font-size: 18px; outline: none; cursor: pointer;">
+                          <option value="-"></option>
+                          <option value="https://grcodeclub.github.io/python/sort/SelectionSort.py">SelectionSort.py
+                          </option>
+                      </select>
+                      <br><br>
+                      <div class="bg_preview">
+                          <div class="appearance">
+                              <div class="space">
+                                  <div class="buttons1"> </div>
+                                  <div class="buttons2"> </div>
+                                  <div class="buttons3"></div>
+                              </div>
+                              <div id="name"></div>
+                          </div>
+                          <div id="load"></div>
+                      </div>
+                      <script src="https://grcodeclub.github.io/js/preview_code.js"></script>
+
                   <h2 class="highlight_black">Ταξινόμησης φυσαλίδας (bubble sort)</h2>
                   <p>Σε κάθε πέρασμα, το αμέσως μικρότερο στοιχείο ανεβαίνει, όπως μια φυσαλίδα, στην επιφάνεια του νερού. Ο
                     αλγόριθμος βασίζεται στη σύγκριση και αντιμετάθεση ζευγών που δεν ακολουθούν τη διάταξη της ταξινόμησης</p>
+
+                    <label style="margin-left: 10px;">Διάλεξε αρχείο</label>
+                  <select id="code2" name="code2" style="color: white;border-radius: 10px; background-color: rgba(0, 0, 0, 0.795); border: none;
+                  font-size: 18px; outline: none; cursor: pointer;">
+                      <option value="-"></option>
+                  </select>
+                  <br><br>
+                  <div class="bg_preview">
+                      <div class="appearance">
+                          <div class="space">
+                              <div class="buttons1"> </div>
+                              <div class="buttons2"> </div>
+                              <div class="buttons3"></div>
+                          </div>
+                          <div id="code2"></div>
+                      </div>
+                      <div id="code2"></div>
+                  </div>
+                  <script src="https://grcodeclub.github.io/js/preview_code/2.js"></script>
+
+
                   <h2 class="highlight_black">Ταξινόμησης με Εισαγωγή (Insertion Sort)</h2>
+                  
+                  <label style="margin-left: 10px;">Διάλεξε αρχείο</label>
+                  <select id="code3" name="code3" style="color: white;border-radius: 10px; background-color: rgba(0, 0, 0, 0.795); border: none;
+                  font-size: 18px; outline: none; cursor: pointer;">
+                      <option value="-"></option>
+                      <option value="https://grcodeclub.github.io/python/sort/InsertionSort.py">InsertionSort.py</option>
+                  </select>
+                  <br><br>
+                  <div class="bg_preview">
+                      <div class="appearance">
+                          <div class="space">
+                              <div class="buttons1"> </div>
+                              <div class="buttons2"> </div>
+                              <div class="buttons3"></div>
+                          </div>
+                          <div id="name3"></div>
+                      </div>
+                      <div id="load3"></div>
+                  </div>
+                  <script src="https://grcodeclub.github.io/js/preview_code/3.js"></script>
 
                 </div><!-- Τέλος Background Κειμένου-->
             </div> <!--Τέλος Κειμένου-->
