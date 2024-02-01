@@ -1,42 +1,42 @@
 $(document).ready(function() {
     
-    var  menuLink = '<li><a href="https://grcodeclub.github.io">Αρχική Σελίδα</a></li>';
+    var  menuLink = '<li><a href="https://grcodeclub.gr">Αρχική Σελίδα</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     
-    menuLink = ' <li><a href="https://grcodeclub.github.io/programming/">Προγραμματισμός</a></li>';
+    menuLink = ' <li><a href="https://grcodeclub.gr/programming/">Προγραμματισμός</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
-    menuLink = ' <li><a href="https://grcodeclub.github.io/programming/post/more.html">Περισσότερα</a></li>';
+    menuLink = ' <li><a href="https://grcodeclub.gr/programming/post/more.html">Περισσότερα</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
-    menuLink = ' <li><a href="https://grcodeclub.github.io/programming/post/ορολογία.html">Oρολογία</a></li>';
+    menuLink = ' <li><a href="https://grcodeclub.gr/programming/post/ορολογία.html">Oρολογία</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     
-    menuLink = '<li><a href="https://grcodeclub.github.io/c">C</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.gr/c">C</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     
-    menuLink = '<li><a href="https://grcodeclub.github.io/cpp">C++</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.gr/cpp">C++</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     
-    menuLink = '<li><a href="https://grcodeclub.github.io/java">Java</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.gr/java">Java</a></li>';
      $('.sidebarMenuInner').append(menuLink);
     
-    menuLink = '<li><a href="https://grcodeclub.github.io/python">Python</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.gr/python">Python</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     
-    menuLink = '<li><a href="https://grcodeclub.github.io/website/">Website</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.gr/website/">Website</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
-    menuLink = '<li><a href="https://grcodeclub.github.io/nodejs/">Node.js</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.gr/nodejs/">Node.js</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
-    menuLink = '<li><a href="https://grcodeclub.github.io/programming/post/sql.html">SQL</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.gr/programming/post/sql.html">SQL</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     
-    menuLink = '<li><a href="https://grcodeclub.github.io/programming/post/docker.html">Docker</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.gr/programming/post/docker.html">Docker</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     
-    menuLink = '<li><a href="https://grcodeclub.github.io/programming/post/markdown.html">Markdown</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.gr/programming/post/markdown.html">Markdown</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
     menuLink = '<li style="height: 200px;"></li>';
