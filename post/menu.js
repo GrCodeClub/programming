@@ -6,7 +6,7 @@ $(document).ready(function() {
     menuLink = ' <li><a href="https://grcodeclub.gr/programming/">Προγραμματισμός</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
-    menuLink = ' <li><a href="https://grcodeclub.gr/programming/post/more">Περισσότερα</a></li>';
+    menuLink = ' <li><a href="https://grcodeclub.gr/programming/post">Περισσότερα</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
     menuLink = ' <li><a href="https://grcodeclub.gr/programming/post/ορολογία">Oρολογία</a></li>';
@@ -30,13 +30,13 @@ $(document).ready(function() {
     menuLink = '<li><a href="https://grcodeclub.gr/nodejs/">Node.js</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
-    menuLink = '<li><a href="https://grcodeclub.gr/programming/post/sql">SQL</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.gr/sql">SQL</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     
-    menuLink = '<li><a href="https://grcodeclub.gr/programming/post/docker">Docker</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.gr/docker">Docker</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     
-    menuLink = '<li><a href="https://grcodeclub.gr/programming/post/markdown">Markdown</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.gr/programming/markdown">Markdown</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
     menuLink = '<li style="height: 200px;"></li>';
