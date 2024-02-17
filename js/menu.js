@@ -9,7 +9,7 @@ $(document).ready(function() {
     menuLink = ' <li><a href="https://grcodeclub.gr/programming/post">Περισσότερα</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
-    menuLink = ' <li><a href="https://grcodeclub.gr/programming/post/ορολογία">Oρολογία</a></li>';
+    menuLink = ' <li><a href="https://grcodeclub.gr/programming/orologia">Oρολογία</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     
     menuLink = '<li><a href="https://grcodeclub.gr/c">C</a></li>';
